@@ -7,3 +7,5 @@
 local require = require
 
 module( "steamwebapi" )
+
+https = require( "steamwebapi.https" )
