@@ -15,7 +15,7 @@ module( "steamwebapi.ISteamWebUserPresenceOAuth.v0001" )
 -- Input: 
 -- Output: 
 -------------------------------------------------------------------------------
-function DeviceInfo()
+function DeviceInfo( postData )
 end
 
 -------------------------------------------------------------------------------
@@ -35,7 +35,7 @@ end
 -- Input: 
 -- Output: HTTP status code, JSON decoded table
 -------------------------------------------------------------------------------
-function Message()
+function Message( postData )
 end
 
 -------------------------------------------------------------------------------
