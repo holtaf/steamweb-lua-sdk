@@ -15,5 +15,5 @@ module( "steamwebapi.ISteamOAuth2.v0001" )
 -- Input: 
 -- Output: 
 -------------------------------------------------------------------------------
-function GetTokenWithCredentials( postData )
+function GetTokenWithCredentials()
 end
