@@ -8,6 +8,8 @@ local require = require
 
 module( "steamwebapi" )
 
-https = require( "steamwebapi.https" )
+http	= require( "steamwebapi.http" )
+https	= require( "steamwebapi.https" )
+url		= require( "steamwebapi.url" )
 
 URL_WEBAPI_BASE = "https://api.steampowered.com:443"

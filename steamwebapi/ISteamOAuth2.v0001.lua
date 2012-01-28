@@ -25,5 +25,4 @@ module( "steamwebapi.ISteamOAuth2.v0001" )
 -- Output: HTTP status code, JSON decoded table
 -------------------------------------------------------------------------------
 function GetTokenWithCredentials( postData )
-	return r, t
 end

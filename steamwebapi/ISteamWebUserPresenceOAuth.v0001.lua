@@ -22,9 +22,11 @@ end
 -- ISteamWebUserPresenceOAuth.Logon()
 -- Purpose: 
 -- Input: 
+--	postData - table containing POST information
+--		access_token - token provided by ISteamOAuth2.GetTokenWithCredentials()
 -- Output: HTTP status code, JSON decoded table
 -------------------------------------------------------------------------------
-function Logon()
+function Logon( postData )
 end
 
 -------------------------------------------------------------------------------
