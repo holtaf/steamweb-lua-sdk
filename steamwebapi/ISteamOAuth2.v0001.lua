@@ -12,12 +12,8 @@ module( "steamwebapi.ISteamOAuth2.v0001" )
 -------------------------------------------------------------------------------
 -- ISteamOAuth2.GetTokenWithCredentials()
 -- Purpose: 
--- Input: postData
--- Output: JSON decoded table
+-- Input: 
+-- Output: 
 -------------------------------------------------------------------------------
 function GetTokenWithCredentials( postData )
-	local t = {}
-	https.post()
-	t = json.decode( r )
-	return t
 end

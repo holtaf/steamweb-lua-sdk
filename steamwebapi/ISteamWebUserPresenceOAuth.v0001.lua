@@ -5,6 +5,7 @@
 --			Gran PC
 -------------------------------------------------------------------------------
 local https = require( "steamwebapi.https" )
+local json = require( "json" )
 
 module( "steamwebapi.ISteamWebUserPresenceOAuth.v0001" )
 
