@@ -16,3 +16,12 @@ module( "steamwebapi.ISteamWebUserPresenceOAuth.v0001" )
 -------------------------------------------------------------------------------
 function Logon()
 end
+
+-------------------------------------------------------------------------------
+-- ISteamWebUserPresenceOAuth.DeviceInfo()
+-- Purpose: 
+-- Input: 
+-- Output: 
+-------------------------------------------------------------------------------
+function DeviceInfo()
+end
