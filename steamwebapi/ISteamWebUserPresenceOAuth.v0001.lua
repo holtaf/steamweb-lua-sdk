@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+-- ISteamWebUserPresenceOAuth v0001
+-- Steam Web Lua API
+-- Authors: Andrew McWatters
+--			Gran PC
+-------------------------------------------------------------------------------
+local https = require( "steamwebapi.https" )
+
+module( "steamwebapi.ISteamWebUserPresenceOAuth.v0001" )
+
+-------------------------------------------------------------------------------
+-- ISteamWebUserPresenceOAuth.Logon()
+-- Purpose: 
+-- Input: 
+-- Output: 
+-------------------------------------------------------------------------------
+function Logon()
+end
