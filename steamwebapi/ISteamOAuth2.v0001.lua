@@ -12,8 +12,17 @@ module( "steamwebapi.ISteamOAuth2.v0001" )
 -------------------------------------------------------------------------------
 -- ISteamOAuth2.GetTokenWithCredentials()
 -- Purpose: 
--- Input: 
--- Output: 
+-- Input:
+--	postData - table containing POST information
+--		client_id		- OAuth client ID
+--		grant_type		- (???) Not yet identified
+--		username		- username of Steam account
+--		password		- password to Steam account
+--		x_emailauthcode - Steam Guard code
+--		x_webcookie		- (???) Not yet identified
+--		scope			- (???) Perhaps the scope of access provided through
+--						  the given token
+-- Output: JSON decoded table
 -------------------------------------------------------------------------------
 function GetTokenWithCredentials()
 end
