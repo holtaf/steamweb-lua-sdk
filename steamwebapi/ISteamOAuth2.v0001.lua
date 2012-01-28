@@ -2,7 +2,7 @@
 -- ISteamOAuth2 v0001
 -- Steam Web Lua API
 -- Authors: Andrew McWatters
---			Gran PC
+--			GranPC
 -------------------------------------------------------------------------------
 local https = require( "steamwebapi.https" )
 local json = require( "json" )
@@ -22,7 +22,8 @@ module( "steamwebapi.ISteamOAuth2.v0001" )
 --		x_webcookie		- (???) Not yet identified
 --		scope			- (???) Perhaps the scope of access provided through
 --						  the given token
--- Output: JSON decoded table
+-- Output: HTTP status code, JSON decoded table
 -------------------------------------------------------------------------------
-function GetTokenWithCredentials()
+function GetTokenWithCredentials( postData )
+	return r, t
 end

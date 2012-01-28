@@ -22,7 +22,7 @@ end
 -- ISteamWebUserPresenceOAuth.Logon()
 -- Purpose: 
 -- Input: 
--- Output: 
+-- Output: HTTP status code, JSON decoded table
 -------------------------------------------------------------------------------
 function Logon()
 end
@@ -31,7 +31,7 @@ end
 -- ISteamWebUserPresenceOAuth.Message()
 -- Purpose: 
 -- Input: 
--- Output: 
+-- Output: HTTP status code, JSON decoded table
 -------------------------------------------------------------------------------
 function Message()
 end
@@ -40,7 +40,7 @@ end
 -- ISteamWebUserPresenceOAuth.Poll()
 -- Purpose: 
 -- Input: 
--- Output: 
+-- Output: HTTP status code, JSON decoded table
 -------------------------------------------------------------------------------
 function Poll()
 end

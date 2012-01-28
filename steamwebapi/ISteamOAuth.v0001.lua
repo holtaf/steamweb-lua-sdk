@@ -13,7 +13,7 @@ module( "steamwebapi.ISteamOAuth.v0001" )
 -- ISteamOAuth.GetFriendList()
 -- Purpose: 
 -- Input: 
--- Output: 
+-- Output: HTTP status code, JSON decoded table
 -------------------------------------------------------------------------------
 function GetFriendList()
 end
@@ -22,7 +22,7 @@ end
 -- ISteamOAuth.GetFriendList()
 -- Purpose: 
 -- Input: 
--- Output: 
+-- Output: HTTP status code, JSON decoded table
 -------------------------------------------------------------------------------
 function GetUserSummaries()
 end
