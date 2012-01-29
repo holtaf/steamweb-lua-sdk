@@ -8,6 +8,7 @@ local ipairs = ipairs
 local next = next
 local pairs = pairs
 local string = string
+local type = type
 
 module( "steamwebapi.url" )
 

@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- ISteamWebAPIUtil v0001
+-- ISteamOAuth v0001
 -- Steam Web Lua API
 -- Authors: Andrew McWatters
 --			Gran PC
@@ -7,13 +7,22 @@
 local https = require( "steamwebapi.https" )
 local json = require( "json" )
 
-module( "steamwebapi.ISteamWebAPIUtil.v0001" )
+module( "steamwebapi.v0001.ISteamOAuth" )
 
 -------------------------------------------------------------------------------
--- ISteamOAuth.GetServerInfo()
+-- ISteamOAuth.GetFriendList()
 -- Purpose: 
 -- Input: 
 -- Output: HTTP status code, JSON decoded table
 -------------------------------------------------------------------------------
-function GetServerInfo()
+function GetFriendList()
+end
+
+-------------------------------------------------------------------------------
+-- ISteamOAuth.GetFriendList()
+-- Purpose: 
+-- Input: 
+-- Output: HTTP status code, JSON decoded table
+-------------------------------------------------------------------------------
+function GetUserSummaries()
 end

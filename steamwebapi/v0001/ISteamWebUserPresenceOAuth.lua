@@ -7,7 +7,7 @@
 local https = require( "steamwebapi.https" )
 local json = require( "json" )
 
-module( "steamwebapi.ISteamWebUserPresenceOAuth.v0001" )
+module( "steamwebapi.v0001.ISteamWebUserPresenceOAuth" )
 
 -------------------------------------------------------------------------------
 -- ISteamWebUserPresenceOAuth.DeviceInfo()
@@ -16,6 +16,7 @@ module( "steamwebapi.ISteamWebUserPresenceOAuth.v0001" )
 -- Output: 
 -------------------------------------------------------------------------------
 function DeviceInfo( postData )
+	postData = url.escape( postData )
 end
 
 -------------------------------------------------------------------------------
@@ -27,6 +28,7 @@ end
 -- Output: HTTP status code, JSON decoded table
 -------------------------------------------------------------------------------
 function Logon( postData )
+	postData = url.escape( postData )
 end
 
 -------------------------------------------------------------------------------
@@ -36,6 +38,7 @@ end
 -- Output: HTTP status code, JSON decoded table
 -------------------------------------------------------------------------------
 function Message( postData )
+	postData = url.escape( postData )
 end
 
 -------------------------------------------------------------------------------
@@ -44,5 +47,16 @@ end
 -- Input: 
 -- Output: HTTP status code, JSON decoded table
 -------------------------------------------------------------------------------
-function Poll()
+function Poll( postData )
+	postData = url.escape( postData )
+end
+
+-------------------------------------------------------------------------------
+-- ISteamWebUserPresenceOAuth.Poll()
+-- Purpose: 
+-- Input: 
+-- Output: HTTP status code, JSON decoded table
+-------------------------------------------------------------------------------
+function PollStatus( postData )
+	postData = url.escape( postData )
 end
