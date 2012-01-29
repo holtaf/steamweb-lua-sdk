@@ -16,7 +16,7 @@ module( "steamwebapi.v0001.ISteamWebUserPresenceOAuth" )
 -- Output: 
 -------------------------------------------------------------------------------
 function DeviceInfo( postData )
-	postData = url.escape( postData )
+	postData = url.encodetable( postData )
 end
 
 -------------------------------------------------------------------------------
@@ -28,7 +28,7 @@ end
 -- Output: HTTP status code, JSON decoded table
 -------------------------------------------------------------------------------
 function Logon( postData )
-	postData = url.escape( postData )
+	postData = url.encodetable( postData )
 end
 
 -------------------------------------------------------------------------------
@@ -38,7 +38,7 @@ end
 -- Output: HTTP status code, JSON decoded table
 -------------------------------------------------------------------------------
 function Message( postData )
-	postData = url.escape( postData )
+	postData = url.encodetable( postData )
 end
 
 -------------------------------------------------------------------------------
@@ -48,7 +48,7 @@ end
 -- Output: HTTP status code, JSON decoded table
 -------------------------------------------------------------------------------
 function Poll( postData )
-	postData = url.escape( postData )
+	postData = url.encodetable( postData )
 end
 
 -------------------------------------------------------------------------------
@@ -58,5 +58,5 @@ end
 -- Output: HTTP status code, JSON decoded table
 -------------------------------------------------------------------------------
 function PollStatus( postData )
-	postData = url.escape( postData )
+	postData = url.encodetable( postData )
 end
