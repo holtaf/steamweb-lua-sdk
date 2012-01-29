@@ -41,7 +41,7 @@ function encodetable (args)
       vals = {vals}
     end
     for i,val in ipairs(vals) do
-      strp = strp.."&"..escape(key).."="..escape(val)
+      strp = strp.."&"..key.."="..escape(val)
     end
   end
   -- remove first & 
