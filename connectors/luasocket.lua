@@ -3,6 +3,8 @@
 -- Steam Web Lua API
 -- Authors: Andrew McWatters
 --			Gran PC
+--			Matt Stevens
+--			Gregor Steiner
 -------------------------------------------------------------------------------
 local http = require( "socket.http" )
 require( "https" )

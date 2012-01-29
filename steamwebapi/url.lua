@@ -2,7 +2,9 @@
 -- URL module
 -- Steam Web Lua API
 -- Authors: Andrew McWatters
---			Gran PC
+--          Gran PC
+--          Matt Stevens
+--          Gregor Steiner
 -------------------------------------------------------------------------------
 local ipairs = ipairs
 local next = next
