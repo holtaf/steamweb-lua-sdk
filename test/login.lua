@@ -2,9 +2,7 @@
 -- usage: lua test\login.lua
 
 local steamwebapi = require( "steamwebapi" )
-local ISteamOAuth = require( "steamwebapi.v0001.ISteamOAuth" )
 local ISteamOAuth2 = require( "steamwebapi.v0001.ISteamOAuth2" )
-local ISteamWebUserPresenceOAuth = require( "steamwebapi.v0001.ISteamWebUserPresenceOAuth" )
 
 -- this test uses luasocket as a connector
 require( "connectors.luasocket" )
@@ -37,50 +35,6 @@ if ( statusCode == 200 ) then
 		if ( statusCode == 200 ) then
 			for k, v in pairs( response ) do
 				print( k, v )
-			end
-			local newPostData = {}
-			local access_token = response.access_token
-			newPostData = {
-				access_token = access_token,
-				steamid = response.x_steamid
-			}
-			print( "Getting friends list..." )
-			status, response = ISteamOAuth.GetFriendList( newPostData )
-			local str = ""
-			local add = ""
-			for k, v in pairs( response.friends ) do
-				str = str .. add .. v.steamid
-				add = ","
-			end
-			local targetFriend
-			newPostData.steamid = nil
-			newPostData.steamids = str
-			print( "Getting user summaries (names)..." )
-			status, response = ISteamOAuth.GetUserSummaries( newPostData )
-			local breakloops
-			for k,v in pairs( response ) do
-				for i,z in pairs( v ) do
-					if ( string.find( z.personaname, "Overv" ) ) then
-						targetFriend = z
-						breakloops = true
-						break
-					end
-				end
-				if breakloops then break end
-			end
-			newPostData.steamids = nil
-			print( "Sending message..." )
-			status, response = ISteamWebUserPresenceOAuth.Logon( newPostData )
-			local msgData = {
-				access_token = access_token,
-				type = "saytext",
-				steamid_dst = targetFriend.steamid,
-				text = "sup Overv",
-				umqid = response.umqid
-			}
-			status, response = ISteamWebUserPresenceOAuth.Message( msgData )
-			if ( status == 200 and response.error == "OK" ) then
-				print( "Done!" )
 			end
 		end
 	end
